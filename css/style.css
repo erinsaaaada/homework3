@@ -10,12 +10,15 @@ Make sure to learn what the starter code does!!
 
 body{
   color: black;
-  font-family: sans-serif;
+  font-family: Andika, sans-serif;
   font-size: 16px;
   margin: 1.2em;
   background-size: cover ;
   background-position: center;
+  background-image:url("images/pigeon-background.JPEG");
+  background-color:#DDDDDD;
 }
+
 
 main{
   margin-bottom: 100px;
@@ -32,30 +35,79 @@ caption{
   margin:5px 0px;
 }
 
-p{}
+p{
+  color:black;
+  font-size:16px;
+  padding-top:10px;
+}
 
-a{}
+a{
+  font-size:16px;
+  color:#6A162E;
+  text-decoration-style:wavy;
+}
 
 table{
     border: 2px solid black;
+    margin: 0 auto;
+    border-radius: 16px;
+    border-collapse:separate;
+    border-spacing:0;
 }
 
 .colhead{
   background-color: #7e0820;
   color: white;
+  width:100px;
+  width:auto;
+  padding:10px;
+  text-align:center;
+  text-transform:uppercase;
 }
 
-.rowhead{}
+.rowhead{
+  padding:15px;
+  border-top:2px solid black;
+}
+
+:focus{
+  border:2px solid black;
+}
 
 td{
   padding: 15px;
+  border-top:2px solid black;
 }
 
-tr{}
+tr:{
+  text-align:center;
+  border-top:2px solid black;
+  padding:15px;
+}
 
 *{}
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-radius:16px 0 0 0;
+}
+
+thead tr:first-child th:last-child{
+  border-radius:0 16px 0 0;
+}
+
+tbody tr:nth-child(odd){
+background-color:#D1D1D1;
+}
+
+tbody tr:nth-child(odd):hover{
+  background-color:rgb(126,8,32);
+  opacity:0.5;
+}
+
+tbody tr:hover{
+  background-color:#7e0820;
+  opacity:0.5;
+}
 
 footer{
   position:fixed;
@@ -64,5 +116,11 @@ footer{
   width:100%;
   background:black;
   text-align:center;
-  color: white;
+  height:60px;
+  height:auto;
+  padding-bottom:10px;
+}
+
+footer > p{
+  color:white;
 }
